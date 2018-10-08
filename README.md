@@ -1,7 +1,8 @@
-# animate
-気になるアニメーションライブラリを使ってみる
+# responsive_img
+画像のレスポンシブを試す
 
 # 参考
-http://mojs.io/
-https://github.com/bendc/animateplus
-https://shakrmedia.github.io/tuesday/
+https://developer.mozilla.org/ja/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+https://www.html5rocks.com/ja/tutorials/responsive/picture-element/
+https://junzou-marketing.com/srcset-sizes-attributes
+https://qiita.com/C058/items/643a9ff2d23dfe3a0b37
