@@ -21,19 +21,6 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <div class="wrapper" id="app">
-      <div class="inner">
-        <p>{{ message }}</p>
-        <input v-model="message">
-        <div class="l-elem">l-elem</div>
-        <div class="m-elem">m-elem</div>
-        <div class="s-elem">s-elem</div>
-        <div class="mb-elem">mb-elem</div>
-        <div class="pc-elem">pc-elem</div>
-      </div>
-    </div>
-    <div class="anime" onclick="this.children[0].className+=' active';">この文字をクリックするとアニメーションを動かします
-      <div class="a-fadein-up a-mode--forwards a-duration--10 a-timing--in-quit">.activeをつけるとゆっくり現れます</div>
-    </div><canvas id="myCanvas"></canvas>
+    <p>↓720pxで表示したい画像</p><img src="/images/img-720.png" alt="720pxで表示したい画像" srcset="/images/img-1440.png 2x" style="max-width: 720px;">
   </body>
 </html>
