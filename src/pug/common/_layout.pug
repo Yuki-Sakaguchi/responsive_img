@@ -7,9 +7,6 @@ block setVariable
 doctype html
 html
   head
-    //- GAの読み込み
-    //- include _ga.pug
-
     meta(charset='UTF-8')
     meta(http-quiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -34,9 +31,7 @@ html
 
     //- css
     block style
-      link(rel="apple-touch-icon-precomposed", href="/images/apple-touch-icon.png")
-      link(rel="shortcut icon", href="/images/favicon.ico")
-      link(rel='stylesheet', href='/css/main.css')
+      link(rel='stylesheet', href='./css/main.css')
 
   body
     //- 共通ヘッダー
@@ -48,6 +43,4 @@ html
     //- 共通フッター
     include _footer.pug
 
-    //- スクリプト
-    block script
-      //- script(src='/js/bundle.js')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js")
