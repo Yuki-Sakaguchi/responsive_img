@@ -19,7 +19,18 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <p>↓720pxで表示したい画像</p><img src="./images/img-720.png" alt="720pxで表示したい画像" srcset="./images/img-1440.png 2x" style="max-width: 720px;">
+    <section>
+      <h2>imgタグのsrcset</h2>
+      <p>↓720pxで表示したい画像</p><img src="./images/img-720.png" srcset="./images/img-720.png 360w,./images/img-1440.png 720w" alt="720pxで表示したい画像" style="max-width: 720px; width: 100%; height: auto">
+    </section>
+    <section>
+      <h2>pictureタグ</h2>
+      <p>↓720pxで表示したい画像</p>
+      <picture>
+        <source media="(min-width: 720px)" srcset="./images/img-1440.png">
+        <source media="(min-width: 360px)" srcset="./images/img-720.png"><img src="./images/img-720.png" alt="720pxで表示したい画像" style="max-width: 720px; width: 100%; height: auto">
+      </picture>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script>
   </body>
 </html>

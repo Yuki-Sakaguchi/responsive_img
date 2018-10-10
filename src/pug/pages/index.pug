@@ -1,5 +1,15 @@
 extends ../common/_layout.pug
 
 block body
-  p ↓720pxで表示したい画像
-  img(src="./images/img-720.png", alt="720pxで表示したい画像", srcset="./images/img-1440.png 2x", style="max-width: 720px;")
+  section
+    h2 imgタグのsrcset
+    p ↓720pxで表示したい画像
+    img(src="./images/img-720.png", srcset="./images/img-720.png 360w,./images/img-1440.png 720w", alt="720pxで表示したい画像", style="max-width: 720px; width: 100%; height: auto")
+
+  section
+    h2 pictureタグ
+    p ↓720pxで表示したい画像
+    picture
+      source(media="(min-width: 720px)", srcset="./images/img-1440.png")
+      source(media="(min-width: 360px)", srcset="./images/img-720.png")
+      img(src="./images/img-720.png", alt="720pxで表示したい画像", style="max-width: 720px; width: 100%; height: auto")
